@@ -33,6 +33,10 @@ TARGET_SCREEN_WIDTH := 720
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
+# AID/fs configs
+PRODUCT_PACKAGES += \
+    fs_config_files
+
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService
