@@ -124,5 +124,9 @@ TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 # Treble
 BOARD_VNDK_VERSION := current
 
+# Verified Boot
+BOARD_AVB_ENABLE := true
+BOARD_AVB_ROLLBACK_INDEX := $(PLATFORM_SECURITY_PATCH_TIMESTAMP)
+
 # Inherit from the proprietary version
 include vendor/asus/X01AD/BoardConfigVendor.mk
