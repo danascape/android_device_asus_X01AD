@@ -83,6 +83,9 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
+   libstdc++.vendor
+
+PRODUCT_PACKAGES += \
     Snap
 
 # CNE
