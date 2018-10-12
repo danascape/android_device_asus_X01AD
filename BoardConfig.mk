@@ -40,7 +40,6 @@ BOARD_KERNEL_CMDLINE += msm_rtb.filter=0x237 ehci-hcd.park=3
 BOARD_KERNEL_CMDLINE += lpm_levels.sleep_disabled=1
 BOARD_KERNEL_CMDLINE += androidboot.bootdevice=7824900.sdhci
 BOARD_KERNEL_CMDLINE += earlycon=msm_serial_dm,0x78af000
-BOARD_KERNEL_CMDLINE += firmware_class.path=/vendor/firmware_mnt/image
 BOARD_KERNEL_CMDLINE += androidboot.usbconfigfs=true
 BOARD_KERNEL_CMDLINE += loop.max_part=7
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
