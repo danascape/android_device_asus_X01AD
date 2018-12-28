@@ -50,6 +50,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libcrypto
 
+# IMS
+PRODUCT_PACKAGES += \
+    ims-ext-common \
+    ims_ext_common.xml
+
 # Net
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.0 \
