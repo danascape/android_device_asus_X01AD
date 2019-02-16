@@ -128,6 +128,9 @@ TARGET_BOARD_PLATFORM_GPU := qcom-adreno506
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
+# QCOM hardware
+BOARD_USES_QCOM_HARDWARE := true
+
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
