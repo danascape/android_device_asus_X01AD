@@ -60,7 +60,7 @@ ro.opengles.version=196610
 drm.service.enabled=true
 
 # Enforce privapp-permissions whitelist
-ro.control_privapp_permissions=log
+ro.control_privapp_permissions=enforce
 
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/config
