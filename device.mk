@@ -33,6 +33,10 @@ TARGET_SCREEN_WIDTH := 720
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
+# ANT+
+PRODUCT_PACKAGES += \
+    AntHalService
+
 # Bluetooth
 PRODUCT_PACKAGES += \
    BluetoothQti
