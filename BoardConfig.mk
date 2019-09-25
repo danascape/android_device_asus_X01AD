@@ -181,12 +181,11 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
+# Sepolicy - Common
+include device/qcom/sepolicy-legacy-um/sepolicy.mk
+
 # Sepolicy - X01AD
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
-
-# Sepolicy - Common
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += device/qcom/sepolicy/private
-BOARD_PLAT_PUBLIC_SEPOLICY_DIR += device/qcom/sepolicy/public
 
 # Telephony
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
