@@ -102,5 +102,9 @@ TARGET_BOARD_PLATFORM_GPU := qcom-adreno506
 # Telephony
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 
+# Treble
+BOARD_VNDK_RUNTIME_DISABLE := true
+BOARD_VNDK_VERSION := current
+
 # Inherit from the proprietary version
 include vendor/asus/X01AD/BoardConfigVendor.mk
