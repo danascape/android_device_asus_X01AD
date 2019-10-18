@@ -176,6 +176,9 @@ vendor.camera.lowpower.record.enable=1
 persist.vendor.camera.display.umax=1920x1080
 persist.vendor.camera.display.lmax=1280x720
 
+# QC framework value-adds
+ro.vendor.qti.va_aosp.support=1
+
 #expose aux camera for below packages
 vendor.camera.aux.packagelist=org.codeaurora.snapcam
 
