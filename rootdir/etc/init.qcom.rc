@@ -483,12 +483,6 @@ service irsc_util /vendor/bin/irsc_util "/vendor/etc/sec_config"
     user root
     oneshot
 
-service qmiproxy /system/bin/qmiproxy
-    class main
-    user radio
-    group radio diag
-    disabled
-
 service vendor.rmt_storage /vendor/bin/rmt_storage
     class core
     user root
