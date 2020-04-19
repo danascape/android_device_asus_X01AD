@@ -448,12 +448,6 @@ on property:persist.debug.trace=1
     mkdir /data/core 0777 root root
     write /proc/sys/kernel/core_pattern "/data/core/%E.%p.%e"
 
-on property:vendor.bluetooth.startbtlogger=true
-    start vendor.bt_logger
-
-on property:vendor.bluetooth.startbtlogger=false
-    stop vendor.bt_logger
-
 on property:vendor.media.target.version=*
     setprop vendor.sys.media.target.version ${vendor.media.target.version}
 
@@ -488,13 +482,6 @@ service irsc_util /vendor/bin/irsc_util "/vendor/etc/sec_config"
     class core
     user root
     oneshot
-
-service vendor.bt_logger /system/bin/bt_logger
-   user bluetooth
-   group bluetooth net_bt_admin sdcard_rw sdcard_r media_rw
-   class late_start
-   disabled
-   oneshot
 
 service qmiproxy /system/bin/qmiproxy
     class main
