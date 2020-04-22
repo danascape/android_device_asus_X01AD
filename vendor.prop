@@ -57,9 +57,6 @@ drm.service.enabled=true
 # Enforce privapp-permissions whitelist
 ro.control_privapp_permissions=log
 
-# FM
-vendor.hw.fm.init=0
-
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/config
 
