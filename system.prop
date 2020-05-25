@@ -87,6 +87,7 @@ persist.timed.enable=true
 #system prop for Bluetooth SOC type
 ro.bluetooth.library_name=libbluetooth_qti.so
 persist.vendor.btstack.enable.splita2dp=false
+vendor.bluetooth.soc=pronto
 
 # System property for cabl
 ro.qualcomm.cabl=2
