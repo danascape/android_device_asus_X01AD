@@ -105,6 +105,7 @@ PRODUCT_PACKAGES += \
     textclassifier.bundle1
 
 # VNDK
+PRODUCT_TARGET_VNDK_VERSION := 29
 PRODUCT_PACKAGES += \
     vndk_package
 
