@@ -547,6 +547,18 @@ service qmiproxy /system/bin/qmiproxy
     group radio diag
     disabled
 
+service vendor.rmt_storage /vendor/bin/rmt_storage
+    class core
+    user root
+    shutdown critical
+    ioprio rt 0
+    writepid /dev/cpuset/system-background/tasks
+
+service vendor.tftp_server /vendor/bin/tftp_server
+   class core
+   user root
+   writepid /dev/cpuset/system-background/tasks
+
 service vendor.sensors /vendor/bin/sscrpcd sensorspd
     class early_hal
     user system
