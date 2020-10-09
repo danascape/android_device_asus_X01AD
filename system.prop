@@ -187,3 +187,6 @@ ro.vendor.qti.va_aosp.support=1
 vendor.camera.aux.packagelist=org.codeaurora.snapcam
 
 persist.asus.led.on=1
+
+# BPF
+ro.kernel.ebpf.supported=true
