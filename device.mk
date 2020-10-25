@@ -51,3 +51,7 @@ PRODUCT_BOOT_JARS += \
 # VNDK
 PRODUCT_PACKAGES += \
     vndk_package
+
+# Wifi
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/wifi/WCNSS_cfg.dat:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/wlan/prima/WCNSS_cfg.dat
