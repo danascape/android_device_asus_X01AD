@@ -191,7 +191,9 @@ product/framework/embmslibrary.jar
 product/framework/qcrilhook.jar
 product/framework/qti-telephony-common.jar
 product/framework/QtiTelephonyServicelibrary.jar
--product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+
+# Radio - from Daisy QKQ1.191002.002 V11.0.5.0.QDLMIXM
+-product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|20c011ffc54539161fa7cc05c55c9c5ed3f936b4
 
 # Radio-IMS
 etc/permissions/com.qualcomm.qti.imscmservice.xml
@@ -243,7 +245,9 @@ product/lib64/vendor.qti.ims.callinfo@1.0.so
 product/lib64/vendor.qti.ims.rcsconfig@1.0.so
 product/lib64/vendor.qti.imsrtpservice@2.0.so
 product/lib64/vendor.qti.imsrtpservice@2.1.so
--product/priv-app/ims/ims.apk
+
+# Radio-IMS - from Daisy QKQ1.191002.002 V11.0.5.0.QDLMIXM
+-product/priv-app/ims/ims.apk|9c4ca91e0ec7a567d22251d7ca0640abf13fdd7b
 
 # SCVE
 product/lib/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so
