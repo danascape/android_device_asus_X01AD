@@ -29,7 +29,7 @@
 #define GREEN_LED       LEDS "green/"
 #define BLUE_LED        LEDS "blue/"
 
-#define BLINK           "blink"
+#define BREATH          "breath"
 #define BRIGHTNESS      "brightness"
 
 #define MAX_LED_BRIGHTNESS    255
@@ -91,7 +91,7 @@ static void handleBacklight(const LightState& state) {
 }
 
 static void handleNotification(const LightState& state) {
-    int blink, onMs, offMs, red, green, blue;
+    int breath, onMs, offMs, red, green, blue;
     uint32_t alpha;
 
     // Extract brightness from AARRGGBB
@@ -122,37 +122,37 @@ static void handleNotification(const LightState& state) {
     if (onMs > 0 && offMs > 0) {
         /*
          * if ON time == OFF time
-         *   use blink mode 2
+         *   use breath mode 2
          * else
-         *   use blink mode 1
+         *   use breath mode 1
          */
         if (onMs == offMs) {
-            blink = 2;
+            breath = 2;
         } else {
-            blink = 1;
+            breath = 1;
         }
     } else {
-        blink = 0;
+        breath = 0;
     }
 
     /* Disable blinking. */
-    set(RED_LED BLINK, 0);
-    set(GREEN_LED BLINK, 0);
-    set(BLUE_LED BLINK, 0);
+    set(RED_LED BREATH, 0);
+    set(GREEN_LED BREATH, 0);
+    set(BLUE_LED BREATH, 0);
 
     /* Enable blinking */
-    if (blink){
+    if (breath){
         if (red)
-            set(RED_LED BLINK, blink);
+            set(RED_LED BREATH, breath);
         if (green)
-            set(GREEN_LED BLINK, blink);
+            set(GREEN_LED BREATH, breath);
         if (blue)
-            set(BLUE_LED BLINK, blink);
+            set(BLUE_LED BREATH, breath);
     } else {
         if (red == 0 && green == 0 && blue == 0) {
-            set(RED_LED BLINK, 0);
-            set(GREEN_LED BLINK, 0);
-            set(BLUE_LED BLINK, 0);
+            set(RED_LED BREATH, 0);
+            set(GREEN_LED BREATH, 0);
+            set(BLUE_LED BREATH, 0);
         }
         set(RED_LED BRIGHTNESS, red);
         set(GREEN_LED BRIGHTNESS, green);
