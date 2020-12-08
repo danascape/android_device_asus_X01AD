@@ -2268,6 +2268,7 @@ vendor/firmware/leia_pfp_470.fw
 vendor/firmware/leia_pm4_470.fw
 vendor/firmware/mono.cnt
 vendor/firmware/novatek_ts_fw.bin
+vendor/firmware/tfa98xx.cnt
 
 # GPS
 etc/permissions/com.qti.location.sdk.xml
