@@ -544,16 +544,6 @@ service vendor.sensingdaemon /vendor/bin/sensingdaemon
     group wifi
     disabled
 
-service cnss-daemon /system/vendor/bin/cnss-daemon -n -l
-    class late_start
-    user system
-    group system inet net_admin wifi
-    capabilities NET_ADMIN
-
-on property:sys.shutdown.requested=*
-    write /sys/kernel/shutdown_wlan/shutdown 1
-    stop cnss-daemon
-
 service loc_launcher /system/vendor/bin/loc_launcher
     class late_start
     user gps

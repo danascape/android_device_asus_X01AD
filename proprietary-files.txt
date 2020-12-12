@@ -2779,11 +2779,6 @@ vendor/bin/time_daemon
 vendor/lib/libtime_genoff.so
 vendor/lib64/libtime_genoff.so
 
-# WiFi
-vendor/bin/cnss-daemon
-vendor/bin/cnss_diag
-vendor/bin/fstman
-
 # Wi-Fi Display - from daisy-user-10-QKQ1.191002.002-V11.0.10.0.QDLMIXM-release-keys
 bin/wfdservice|934817e5689fe6f8b54032902de58c203b8ec2e7
 etc/init/wfdservice.rc|311bfdd1675e56499662f39455536b75b78477bb
