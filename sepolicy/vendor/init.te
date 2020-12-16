@@ -1,0 +1,4 @@
+allow init proc_boot_reason:file r_file_perms;
+allow init firmware_file:filesystem { getattr };
+allow init oemfs:dir { mounton };
+allow init socket_device:sock_file { create };

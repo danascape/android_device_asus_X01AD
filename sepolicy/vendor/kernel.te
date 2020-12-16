@@ -1,0 +1,4 @@
+allow kernel kernel:capability { kill };
+allow kernel sysfs_battery_supply:file { read };
+allow kernel sysfs_battery_supply:dir { search };
+allow kernel sysfs_battery_supply:file { open };

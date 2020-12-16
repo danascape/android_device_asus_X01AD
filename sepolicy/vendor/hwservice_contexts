@@ -1,0 +1,2 @@
+vendor.focaltech.fingerprint::IFocalFingerprintService       u:object_r:ff_hwservice:s0
+vendor.qti.hardware.fingerprint::IQtiExtendedFingerprint     u:object_r:hal_fingerprint_hwservice:s0

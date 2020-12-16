@@ -1,0 +1,7 @@
+# Camera
+type vendor_camera_prop, property_type;
+
+# Fingerprint
+type hal_fingerprint_prop, property_type;
+type cdfinger_prop, property_type;
+type vendor_fingerprint_prop, property_type;

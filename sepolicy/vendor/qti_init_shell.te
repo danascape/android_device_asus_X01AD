@@ -1,0 +1,6 @@
+typeattribute qti_init_shell data_between_core_and_vendor_violators;
+
+allow qti_init_shell ctl_stop_prop:property_service { set };
+allow qti_init_shell proc_boot_reason:file { read };
+allow qti_init_shell bluetooth_data_file:file r_file_perms;
+allow qti_init_shell sysfs:file { setattr };

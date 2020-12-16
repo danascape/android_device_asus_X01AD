@@ -185,7 +185,7 @@ ENABLE_VENDOR_RIL_SERVICE := true
 include device/qcom/sepolicy-legacy-um/sepolicy.mk
 
 # Sepolicy - X01AD
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # Telephony
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
