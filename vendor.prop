@@ -12,6 +12,7 @@ ro.vendor.audio.sdk.fluencetype=fluence
 ro.vendor.audio.sdk.ssr=false
 vendor.audio.dolby.ds2.enabled=false
 vendor.audio.dolby.ds2.hardbypass=false
+vendor.audio.feature.a2dp_offload.enable=false
 vendor.audio.flac.sw.decoder.24bit=true
 vendor.audio_hal.period_size=192
 vendor.audio.hw.aac.encoder=true
@@ -36,8 +37,12 @@ vendor.voice.record.conc.disabled=false
 vendor.voice.voip.conc.disabled=true
 
 # Bluetooth
+persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
+persist.bluetooth.a2dp_offload.disabled=true
+persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptive
 persist.vendor.qcom.bluetooth.enable.splita2dp=false
-ro.vendor.bluetooth.wipower=false
+persist.vendor.qcom.bluetooth.soc=pronto
+ro.bluetooth.a2dp_offload.supported=false
 vendor.qcom.bluetooth.soc=pronto
 
 # Camera
