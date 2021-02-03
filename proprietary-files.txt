@@ -85,7 +85,7 @@ vendor/lib64/soundfx/libqcbassboost.so
 vendor/lib64/soundfx/libqcreverb.so
 vendor/lib64/soundfx/libqcvirt.so
 
-# Audio Hardware - from 17.2018.2004.31-20200507
+# Audio Hardware
 vendor/lib/hw/audio.primary.default.so
 vendor/lib/hw/audio.primary.msm8953.so
 vendor/lib64/hw/audio.primary.default.so
@@ -2729,7 +2729,6 @@ vendor/lib/hw/sensors.msm8953_64.so
 vendor/lib/libsensor1.so
 vendor/lib/libsensor_reg.so
 vendor/lib/libssc_default_listener.so
-vendor/lib/sensors.ssc.so
 vendor/lib/sensor_calibrate.so
 vendor/lib64/hw/activity_recognition.msm8953.so
 vendor/lib64/hw/sensors.msm8953_64.so
@@ -2737,8 +2736,11 @@ vendor/lib64/libsensor1.so
 vendor/lib64/libsensorndkbridge.so
 vendor/lib64/libsensor_reg.so
 vendor/lib64/libssc_default_listener.so
-vendor/lib64/sensors.ssc.so
 vendor/lib64/sensor_calibrate.so
+
+# Sensors - from - daisy-user 10 QKQ1.191002.002 V11.0.12.0.QDLMIXM release-keys
+vendor/lib/sensors.ssc.so|302e5aee38e1296dfba32b681681492d5070f509
+vendor/lib64/sensors.ssc.so|9affbc5130223a63c7c8ee33a1b7408d739e1466
 
 # SSR
 vendor/bin/ssr_diag
