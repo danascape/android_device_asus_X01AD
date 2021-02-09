@@ -6,3 +6,6 @@ genfscon sysfs /devices/soc/qpnp-typec-9/power_supply                  u:object_
 
 # Rmt
 genfscon debugfs /rmt_storage	u:object_r:debugfs_rmt:s0
+
+# Touchscreen
+genfscon proc /tpd_gesture               u:object_r:proc_tpd_gesture:s0
