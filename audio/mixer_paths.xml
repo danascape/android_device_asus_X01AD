@@ -51,9 +51,9 @@
     <ctl name="RX HPH Mode" value="NORMAL" />
     <ctl name="COMP0 RX1" value="0" />
     <ctl name="COMP0 RX2" value="0" />
-    <ctl name="RX1 Digital Volume" value="84" />
-    <ctl name="RX2 Digital Volume" value="84" />
-    <ctl name="RX3 Digital Volume" value="84" />
+    <ctl name="RX1 Digital Volume" value="81" />
+    <ctl name="RX2 Digital Volume" value="81" />
+    <ctl name="RX3 Digital Volume" value="81" />
     <ctl name="IIR1 INP1 Volume" value="53" />
     <ctl name="IIR1 INP2 Volume" value="53" />
     <ctl name="IIR1 INP3 Volume" value="53" />
@@ -61,8 +61,8 @@
     <ctl name="ADC1 Volume" value="4" />
     <ctl name="ADC2 Volume" value="4" />
     <ctl name="ADC3 Volume" value="4" />
-    <ctl name="DEC1 Volume" value="84" />
-    <ctl name="DEC2 Volume" value="84" />
+    <ctl name="DEC1 Volume" value="81" />
+    <ctl name="DEC2 Volume" value="81" />
     <ctl name="DEC2 MUX" value="ZERO" />
     <ctl name="DEC1 MUX" value="ZERO" />
     <ctl name="ADC2 MUX" value="ZERO" />
@@ -1092,7 +1092,7 @@
 
     <path name="wsa-speaker">
         <ctl name="RX3 MIX1 INP1" value="RX1" />
-        <ctl name="RX3 Digital Volume" value="84" />
+        <ctl name="RX3 Digital Volume" value="81" />
         <ctl name="LINE_OUT" value="Switch" />
         <ctl name="SpkrMono WSA_RDAC" value="Switch" />
    </path>
@@ -1124,7 +1124,7 @@
     <path name="handset">
         <ctl name="RX1 MIX1 INP1" value="RX1" />
         <ctl name="RDAC2 MUX" value="RX1" />
-        <ctl name="RX1 Digital Volume" value="84" />
+        <ctl name="RX1 Digital Volume" value="81" />
         <ctl name="EAR PA Gain" value="POS_6_DB" />
         <ctl name="EAR_S" value="Switch" />
     </path>

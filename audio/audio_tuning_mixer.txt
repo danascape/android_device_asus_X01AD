@@ -104,7 +104,7 @@ SLIM RX1 MUX:AIF1_PB
 SLIM_0_RX Channels:One
 RX1 MIX1 INP1:RX1
 CLASS_H_DSM MUX:DSM_HPHL_RX1
-RX1 Digital Volume:87
+RX1 Digital Volume:81
 DAC1 Switch:1
 ANC Slot:7
 SLIMBUS_0_RX Audio Mixer MultiMedia1:1
@@ -129,7 +129,7 @@ SLIM RX1 MUX:AIF1_PB
 SLIM_0_RX Channels:One
 RX1 MIX1 INP1:RX1
 CLASS_H_DSM MUX:DSM_HPHL_RX1
-RX1 Digital Volume:87
+RX1 Digital Volume:81
 DAC1 Switch:1
 ANC Slot:8
 SLIMBUS_0_RX Audio Mixer MultiMedia1:1
