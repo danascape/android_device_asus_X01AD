@@ -1,28 +1,11 @@
-# Firmware
-/firmware                                                     u:object_r:firmware_file:s0
-/bt_firmware                                                  u:object_r:bt_firmware_file:s0
-
-# Fingerprint
-/data/system/cdfinger.*		u:object_r:cdfinger_data_file:s0
-/data/vendor/focaltech(/.*)?		u:object_r:fingerprint_vendor_data_file:s0
+# Fingerprint Data files
+/data/system/cdfinger.*                                                                                        u:object_r:cdfinger_data_file:s0
+/data/vendor/focaltech(/.*)?                                                                                   u:object_r:fingerprint_vendor_data_file:s0
 
 # Fingerprint devices
-/dev/focaltech_fp		u:object_r:ff_device:s0
-/dev/fps[0-9]*		u:object_r:cdfinger_device1:s0
-/dev/fpsdev0		u:object_r:cdfinger_device2:s0
+/dev/focaltech_fp                                                                                              u:object_r:ff_device:s0
+/dev/fps[0-9]*                                                                                                 u:object_r:cdfinger_device1:s0
+/dev/fpsdev0                                                                                                   u:object_r:cdfinger_device2:s0
 
-# HALs
-/(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.X01AD                           u:object_r:hal_light_default_exec:s0
-
-# Input devices
-/(vendor|system/vendor)/usr/idc(/.*)?                         u:object_r:idc_file:s0
-/(vendor|system/vendor)/usr/keylayout(/.*)?                   u:object_r:keylayout_file:s0
-
-# Location
-/data/vendor/location/xtra/socket_hal_xtra    u:object_r:location_socket:s0
-
-# Rild
-/(vendor|system/vendor)/radio/qcril_database/qcril.db			u:object_r:rild_file:s0
-
-# Sys files
-/sys/class/power_supply(/.*)?                                      u:object_r:sysfs_battery_supply:s0
+# HAL
+/(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.X01AD                                    u:object_r:hal_light_default_exec:s0

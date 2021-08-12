@@ -1,4 +1,3 @@
-type lirc_device, dev_type;
 type cdfinger_device, dev_type;
 type cdfinger_device1, dev_type;
 type cdfinger_device2, dev_type;

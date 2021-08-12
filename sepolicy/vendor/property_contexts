@@ -1,13 +1,6 @@
-sys.listeners.registered   u:object_r:vendor_tee_listener_prop:s0
-sys.post_boot.parsed       u:object_r:vendor_mpctl_prop:s0
-persist.net.doxlat         u:object_r:vendor_xlat_prop:s0
-camera.dual.mode           u:object_r:camera_prop:s0
-persist.camera.            u:object_r:camera_prop:s0
-persist.camera.CDS         u:object_r:camera_prop:s0
-persist.camera.gyro.android u:object_r:camera_prop:s0
-persist.camera.is_type     u:object_r:camera_prop:s0
-
 # Fingerprint
-persist.cdfinger.ready     u:object_r:vendor_fingerprint_prop:s0
-property.cdfinger.enablesave u:object_r:vendor_fingerprint_prop:s0
-persist.vendor.runin.fp    u:object_r:vendor_fingerprint_prop:s0
+persist.cdfinger.ready                                         u:object_r:vendor_fingerprint_prop:s0
+property.cdfinger.enablesave                                   u:object_r:vendor_fingerprint_prop:s0
+persist.vendor.runin.fp                                        u:object_r:vendor_fingerprint_prop:s0
+
+sys.listeners.registered                                       u:object_r:vendor_tee_listener_prop:s0

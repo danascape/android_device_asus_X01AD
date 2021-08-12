@@ -5,13 +5,16 @@ vndbinder_use(hal_fingerprint_default)
 binder_call(hal_fingerprint_default, hal_perf_default)
 
 allow hal_fingerprint_default cdfinger_device:chr_file rw_file_perms;
+allow hal_fingerprint_default cdfinger_device1:chr_file { ioctl read write getattr lock append map open };
+allow hal_fingerprint_default cdfinger_device2:chr_file { ioctl read write getattr lock append map open };
+
 allow hal_fingerprint_default ff_device:chr_file rw_file_perms;
-allow hal_fingerprint_default tee_device:chr_file rw_file_perms;
-
-allow hal_fingerprint_default hal_perf_hwservice:hwservice_manager find;
-
 allow hal_fingerprint_default ff_hwservice:hwservice_manager { add find };
 allow hal_fingerprint_default ff_vndservice:service_manager { add find };
+
+allow hal_fingerprint_default fingerprintd_data_file:dir rw_dir_perms;
+
+allow hal_fingerprint_default hal_perf_hwservice:hwservice_manager find;
 
 # Allow hal_fingerprint_default to read, write and create files in persist
 allow hal_fingerprint_default persist_drm_file:file create_file_perms;
@@ -21,12 +24,9 @@ allow hal_fingerprint_default self:netlink_kobject_uevent_socket { read create s
 allow hal_fingerprint_default sysfs_battery_supply:dir { read search };
 allow hal_fingerprint_default sysfs_battery_supply:lnk_file { read };
 
-allow hal_fingerprint_default fingerprintd_data_file:dir rw_dir_perms;
+allow hal_fingerprint_default tee_device:chr_file rw_file_perms;
 
 r_dir_file(hal_fingerprint_default, firmware_file)
 r_dir_file(hal_fingerprint_default, sysfs_usb_supply)
 
 set_prop(hal_fingerprint_default, vendor_fingerprint_prop)
-
-allow hal_fingerprint_default cdfinger_device1:chr_file { ioctl read write getattr lock append map open };
-allow hal_fingerprint_default cdfinger_device2:chr_file { ioctl read write getattr lock append map open };
