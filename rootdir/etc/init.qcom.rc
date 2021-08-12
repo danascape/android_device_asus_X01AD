@@ -33,12 +33,12 @@ on early-init
     mount debugfs debugfs /sys/kernel/debug
     chmod 0755 /sys/kernel/debug
 
-  # create symlink for vendor mount points
+    # Create symlink for vendor mount points
     symlink /vendor/firmware_mnt /firmware
     symlink /vendor/bt_firmware /bt_firmware
     symlink /vendor/dsp /dsp
 
-  # Change ownership of hw_recovery related nodes
+    # Change ownership of hw_recovery related nodes
     chown system graphics /sys/kernel/debug/dri/0/debug/dump
     chown system graphics /sys/kernel/debug/dri/0/debug/recovery_reg
     chown system graphics /sys/kernel/debug/dri/0/debug/recovery_dbgbus
@@ -157,16 +157,15 @@ on boot
     mkdir /mnt/vendor/persist/iar_db 0770 system system
     mkdir /mnt/vendor/spunvm 0770 system system
 
-    #Create WIGIG socket area
+    # Create WIGIG socket area
     mkdir /dev/socket/wigig 0770 wifi wifi
 
     setprop wifi.interface wlan0
 
     setprop ro.telephony.call_ring.multiple false
 
-    #Remove SUID bit for iproute2 ip tool
+    # Remove SUID bit for iproute2 ip tool
     chmod 0755 /system/bin/ip
-
 
     chmod 0444 /sys/devices/platform/msm_hsusb/gadget/usb_state
 
@@ -230,11 +229,10 @@ on boot
     # Create vpp directory
     mkdir /mnt/vendor/persist/vpp 0770 media media
 
-
     # Create hvdcp_opti directory
     mkdir /mnt/vendor/persist/hvdcp_opti 0770 root system
 
-    #sensors log dir
+    # sensors log dir
     mkdir /data/vendor/sensors
     chown system system /data/vendor/sensors
 
@@ -260,11 +258,10 @@ on post-fs-data
     # Create directory for apps access via QTEEConnector
     mkdir /data/vendor/qtee 0770 system system
 
-    #Create folder of camera
+    # Create folder of camera
     mkdir /data/vendor/camera 0770 camera camera
 
-
-    #Create directory for tftp
+    # Create directory for tftp
     mkdir /data/vendor/tombstones 0771 system system
     mkdir /data/vendor/tombstones/rfs 0771 system system
 
@@ -309,7 +306,7 @@ on post-fs-data
     chmod 0771 /persist
     chown system system /persist/WCNSS_qcom_wlan_nv.bin
 
-    #Create directories for Location services
+    # Create directories for Location services
     mkdir /data/vendor/location 0770 gps gps
     mkdir /data/vendor/location/mq 0770 gps gps
     mkdir /data/vendor/location/xtwifi 0770 gps gps
@@ -317,11 +314,11 @@ on post-fs-data
     mkdir /dev/socket/location/mq 0770 gps gps
     mkdir /dev/socket/location/xtra 0770 gps gps
 
-    #Create directories for wifihal services
+    # Create directories for wifihal services
     mkdir /dev/socket/wifihal 0770 wifi wifi
     chmod 2770 /dev/socket/wifihal
 
-    #Create directory for hostapd
+    # Create directory for hostapd
     mkdir /data/hostapd 0770 system wifi
 
     # Create /data/time folder for time-services
@@ -332,11 +329,11 @@ on post-fs-data
     #Create a folder for SRS to be able to create a usercfg file
     #mkdir /data/data/media 0770 media media
 
-    #Create FM dir for patchdownloader
+    # Create FM dir for patchdownloader
     mkdir /data/vendor/fm 0770 system system
     chmod 0770 /data/vendor/fm
 
-    #Create PERFD deamon related dirs
+    # Create PERFD deamon related dirs
     mkdir /data/vendor/perfd 0770 root system
     chmod 2770 /data/vendor/perfd
     rm /data/vendor/perfd/default_values
@@ -363,7 +360,7 @@ on post-fs-data
     # Create vpp directory
     mkdir /data/vendor/vpp 0770 media media
 
-    #Create dir for TUI
+    # Create dir for TUI
     mkdir /data/vendor/tui 0700 system drmrpc
 
 on property:hw.fm.init=*
@@ -423,7 +420,7 @@ on property:persist.vendor.sys.rawdump_copy=0
 on property:sys.boot_completed=1
     write /dev/kmsg "Boot completed "
 
-    #WDSP FW boot sysfs node used by STHAL
+    # WDSP FW boot sysfs node used by STHAL
     chown media audio /sys/kernel/wdsp0/boot
     chown media audio /sys/kernel/wcd_cpe0/fw_name
     chown media audio /sys/kernel/aud_dev/state
@@ -678,10 +675,10 @@ service bugreport /system/bin/dumpstate -d -p -B -z -o /data/user_de/0/com.andro
     oneshot
     keycodes 114 115 116
 
-#Set GPU Opengles version
+# Set GPU Opengles version
 on property:vendor.opengles.version=*
     setprop ro.opengles.version ${vendor.opengles.version}
 
-#Set gpu available frequencies property
+# Set gpu available frequencies property
 on property:vendor.gpu.available_frequencies=*
     setprop ro.vendor.gpu.available_frequencies ${vendor.gpu.available_frequencies}

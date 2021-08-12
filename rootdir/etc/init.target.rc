@@ -72,7 +72,7 @@ on post-fs-data
     mkdir /data/misc/dts 0770 media audio
 
 
-#start camera server as daemon
+# start camera server as daemon
 service qcamerasvr /system/vendor/bin/mm-qcamera-daemon
     class late_start
     user camera
@@ -111,7 +111,7 @@ service thermal-engine /system/vendor/bin/thermal-engine
 on boot
     start rmt_storage
     insmod /system/lib/modules/adsprpc.ko
-# access permission for secure touch
+    # access permission for secure touch
     chmod 0660 /sys/devices/soc.0/78b7000.i2c/i2c-3/3-0020/input/input0/secure_touch_enable
     chmod 0440 /sys/devices/soc.0/78b7000.i2c/i2c-3/3-0020/input/input0/secure_touch
     chmod 0660 /sys/devices/soc.0/78b8000.i2c/i2c-4/4-0020/input/input0/secure_touch_enable
@@ -122,8 +122,8 @@ on boot
     chown system drmrpc /sys/devices/soc.0/78b8000.i2c/i2c-4/4-0020/input/input0/secure_touch
     chown system system /sys/kernel/hbtp/display_pwr
 
-# Add a cpuset for the camera daemon
-# We want all cores for camera
+    # Add a cpuset for the camera daemon
+    # We want all cores for camera
     mkdir /dev/cpuset/camera-daemon
     write /dev/cpuset/camera-daemon/cpus 0-3
     write /dev/cpuset/camera-daemon/mems 0
@@ -149,10 +149,10 @@ on boot
     chown system system /persist/speccfg/submask
     chown system system /persist/speccfg/partition
 
-# access permission for wlan
+    # access permission for wlan
     chown system system /mnt/vendor/persist/WCNSS_qcom_wlan_nv.bin
 
-#USB controller configuration
+    # USB controller configuration
     write /sys/module/g_android/parameters/mtp_tx_req_len 131072
     write /sys/module/g_android/parameters/mtp_rx_req_len 131072
     write /sys/class/android_usb/android0/f_rndis_qc/rndis_transports BAM2BAM_IPA
