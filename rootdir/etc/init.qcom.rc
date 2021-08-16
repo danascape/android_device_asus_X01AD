@@ -560,11 +560,6 @@ service qcamerasvr /system/vendor/bin/mm-qcamera-daemon
     user camera
     group camera system inet input graphics
 
-service qcom-c_core-sh  /vendor/bin/init.qcom.class_core.sh
-    class core
-    user root
-    oneshot
-
 service qcom-c_main-sh /vendor/bin/init.class_main.sh
     class main
     user root

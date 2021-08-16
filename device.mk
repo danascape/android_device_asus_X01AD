@@ -367,7 +367,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     init.class_main.sh \
-    init.qcom.class_core.sh \
     init.qcom.early_boot.sh \
     init.qcom.sh \
     init.qcom.usb.sh
