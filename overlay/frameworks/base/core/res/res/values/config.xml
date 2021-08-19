@@ -73,9 +73,6 @@
 
      <bool name="config_eap_sim_based_auth_supported">true</bool>
 
-    <!--  Whether Multiuser UI should be shown -->
-     <bool name="config_enableMultiUserUI">false</bool>
-
     <!-- Whether to enable network location overlay which allows network
          location provider to be replaced by an app at run-time. When disabled,
          only the config_networkLocationProviderPackageName package will be
@@ -267,9 +264,6 @@
      <integer name="config_brightness_ramp_rate_slow">60</integer>
      <integer name="config_longPressOnHomeBehavior">0</integer>
 
-    <!--  Maximum number of supported users -->
-     <integer name="config_multiuserMaximumUsers">1</integer>
-
     <!-- Default value for led color when battery is fully charged -->
      <integer name="config_notificationsBatteryFullARGB">0xFF001400</integer>
 
@@ -351,12 +345,6 @@
 
     <!-- Telephony qualified networks service package name to bind to by default. -->
     <string name="config_qualified_networks_service_package">vendor.qti.iwlan</string>
-
-    <!-- MMS user agent string -->
-     <string name="config_mms_user_agent">Android-Mms/2.0</string>
-
-    <!-- MMS user agent prolfile url -->
-     <string name="config_mms_user_agent_profile_url">http://www.google.com/oha/rdf/ua-profile-kila.xml</string>
 
     <!--  Define Google play service package for FRP-->
      <string name="config_persistentDataPackageName">com.google.android.gms</string>
