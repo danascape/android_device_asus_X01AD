@@ -434,7 +434,6 @@ PRODUCT_PACKAGES += \
     libwifi-hal-qcom \
     hostapd \
     dhcpcd.conf \
-    wcnss_service \
     wificond \
     wpa_supplicant \
     wpa_supplicant.conf
