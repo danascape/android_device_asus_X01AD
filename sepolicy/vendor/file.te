@@ -4,6 +4,9 @@ type proc_boot_reason, fs_type, proc_type;
 # Camera
 type camera_socket, file_type, data_file_type;
 
+# Factory
+type factory_file, file_type;
+
 # Fingerprint
 type cdfinger_data_file, core_data_file_type, data_file_type, file_type;
 type ff_data_file, core_data_file_type, data_file_type, file_type;

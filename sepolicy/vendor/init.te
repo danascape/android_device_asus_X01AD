@@ -1,3 +1,6 @@
+# Factory
+allow init factory_file:dir mounton;
+
 allow init proc_boot_reason:file r_file_perms;
 allow init firmware_file:filesystem { getattr };
 allow init oemfs:dir { mounton };

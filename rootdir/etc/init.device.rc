@@ -62,6 +62,10 @@ on boot
     chown system system /data/vendor/camera/dualcali_dump.bin
 
 on post-fs-data
+    # Factory
+    mount_all /vendor/etc/fstab.factory
+    restorecon_recursive /factory
+
     mkdir /data/vendor/focaltech 0760 system system
     restorecon /data/vendor/focaltech
 
@@ -74,3 +78,7 @@ on post-fs-data
     write /sys/bus/msm_subsys/devices/subsys2/restart_level "related"
     write /sys/bus/msm_subsys/devices/subsys3/restart_level "related"
     write /sys/bus/msm_subsys/devices/subsys4/restart_level "related"
+
+on charger
+    # Factory
+    mount_all /vendor/etc/fstab.factory --early
