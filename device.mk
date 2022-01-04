@@ -351,6 +351,7 @@ PRODUCT_COPY_FILES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
+    fstab.factory \
     fstab.qcom \
     init.device.rc \
     init.msm.usb.configfs.rc \
