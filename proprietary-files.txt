@@ -2765,6 +2765,3 @@ vendor/lib64/libthermalclient.so
 vendor/bin/time_daemon
 vendor/lib/libtime_genoff.so
 vendor/lib64/libtime_genoff.so
-
-# Wi-Fi
-vendor/bin/wcnss_service
