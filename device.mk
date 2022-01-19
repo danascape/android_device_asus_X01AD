@@ -161,6 +161,7 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
+    android.frameworks.displayservice@1.0.vendor \
     android.frameworks.sensorservice@1.0.vendor \
     android.hardware.camera.common@1.0 \
     android.hardware.camera.device@3.4 \
@@ -232,6 +233,8 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_PACKAGES += \
+    android.hardware.gnss@2.1.vendor \
+    android.hardware.gnss@1.0.vendor \
     libjson
 
 PRODUCT_COPY_FILES += \
@@ -345,6 +348,7 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
+    android.hardware.power@1.2.vendor \
     android.hardware.power-service-qti \
     vendor.qti.hardware.perf@2.0.vendor
 
@@ -396,10 +400,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.5.vendor \
     android.hardware.radio.config@1.2.vendor \
+    android.hardware.radio.deprecated@1.0.vendor \
     android.hardware.secure_element@1.2.vendor
 
 PRODUCT_PACKAGES += \
     librmnetctl \
+    libwpa_client \
     libxml2
 
 # Seccomp policy
