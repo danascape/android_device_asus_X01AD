@@ -155,6 +155,7 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0.vendor \
     android.hardware.bluetooth.audio@2.0-impl
 
 PRODUCT_COPY_FILES += \
@@ -162,6 +163,8 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
+    android.frameworks.displayservice@1.0.vendor \
+    android.frameworks.sensorservice@1.0.vendor \
     android.hardware.camera.common@1.0 \
     android.hardware.camera.device@3.4 \
     android.hardware.camera.provider@2.4-impl \
@@ -215,6 +218,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
     android.hardware.drm@1.0-service \
+    android.hardware.drm@1.3.vendor \
     android.hardware.drm@1.3-service.clearkey
 
 # FM
@@ -229,8 +233,14 @@ PRODUCT_PACKAGES += \
     libvndfwk_detect_jni.qti \
     libvndfwk_detect_jni.qti.vendor
 
+# Gatekeeper
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0.vendor
+
 # GPS
 PRODUCT_PACKAGES += \
+    android.hardware.gnss@2.1.vendor \
+    android.hardware.gnss@1.0.vendor \
     libjson
 
 PRODUCT_COPY_FILES += \
@@ -282,6 +292,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/gpio-keys.kl
 
+# Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@4.1.vendor
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.X01AD
@@ -311,9 +325,18 @@ PRODUCT_PACKAGES += \
 
 # Net
 PRODUCT_PACKAGES += \
-    android.system.net.netd@1.0 \
     libandroid_net \
     netutils-wrapper-1.0
+
+# Network
+PRODUCT_PACKAGES += \
+    android.system.net.netd@1.1.vendor
+
+
+# NeuralNetworks
+PRODUCT_PACKAGES += \
+    android.hardware.neuralnetworks@1.1.vendor \
+    android.hardware.neuralnetworks@1.0.vendor
 
 # OMX
 PRODUCT_PACKAGES += \
@@ -331,6 +354,7 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
+    android.hardware.power@1.2.vendor \
     android.hardware.power-service-qti \
     vendor.qti.hardware.perf@2.0.vendor
 
@@ -380,12 +404,14 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
-    android.hardware.radio@1.4 \
-    android.hardware.radio.config@1.2 \
-    android.hardware.secure_element@1.0
+    android.hardware.radio@1.5.vendor \
+    android.hardware.radio.config@1.2.vendor \
+    android.hardware.radio.deprecated@1.0.vendor \
+    android.hardware.secure_element@1.2.vendor
 
 PRODUCT_PACKAGES += \
     librmnetctl \
+    libwpa_client \
     libxml2
 
 # Seccomp policy
