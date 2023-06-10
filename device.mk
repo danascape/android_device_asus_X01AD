@@ -452,11 +452,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libcld80211 \
-    libqsap_sdk \
-    libQWiFiSoftApCfg \
     libwifi-hal-qcom \
     hostapd \
-    dhcpcd.conf \
     wcnss_service \
     wificond \
     wpa_supplicant \
