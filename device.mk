@@ -98,10 +98,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     AntHalService
 
-# Audio - A2DP
-PRODUCT_PACKAGES += \
-    audio.a2dp.default
-
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@5.0-impl \
