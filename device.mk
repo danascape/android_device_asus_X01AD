@@ -100,16 +100,13 @@ PRODUCT_PACKAGES += \
 
 # Audio - A2DP
 PRODUCT_PACKAGES += \
-    audio.a2dp.default \
-    android.hardware.bluetooth.a2dp@1.0-impl \
-    android.hardware.bluetooth.a2dp@1.0-service
+    audio.a2dp.default
 
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@5.0-impl \
     android.hardware.audio@2.0-service \
     android.hardware.audio.effect@5.0-impl \
-    android.hardware.audio.effect@2.0-service \
     android.hardware.soundtrigger@2.2-impl
 
 PRODUCT_PACKAGES += \
@@ -123,14 +120,6 @@ PRODUCT_PACKAGES += \
     libqcompostprocbundle \
     libvolumelistener \
     tinymix
-
-PRODUCT_PACKAGES += \
-    liba2dpoffload \
-    libhdmiedid \
-    libhfp \
-    libsndmonitor \
-    libspkrprot \
-    libssrec
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.conf \
